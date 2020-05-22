@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Calculator</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<style>
+</style>
+
+<body>
+
+<div style="margin-top:60px;">
+<h1 style="text-align:center">Calculator</h1>
+</div>
+<div class="box">
+	<form name="myForm">
+		<input type="text" name="textview" class="textview" disabled>
+		<span><button onclick="clean()" style="width:60px;">Clear</button><br></span>
+	</form>
+	<div class="key">
+		<button onclick="insertNum(1)">1</button>
+		<button onclick="insertNum(2)">2</button>
+		<button onclick="insertNum(3)">3</button>
+		<button onclick="insertOp('+')">+</button><br>
+		<button onclick="insertNum(4)" style="margin-top:5px;">4</button>
+		<button onclick="insertNum(5)">5</button>
+		<button onclick="insertNum(6)">6</button>
+		<button onclick="insertOp('-')">-</button><br>
+		<button onclick="insertNum(7)" style="margin-top:5px;">7</button>
+		<button onclick="insertNum(8)">8</button>
+		<button onclick="insertNum(9)">9</button>
+		<button onclick="insertOp('*')">*</button><br>
+		<button onclick="insertNum(0)" style="margin-top:5px;">0</button>
+		<button onclick="insertDec('.')">.</button>
+		<button onclick="equalTo('=')">=</button>
+		<button onclick="insertOp('/')">/</button><br>
+	</div>
+</div>	
+	
+<script src="js/calc.js"></script>
+
+</body>
+</html>
